@@ -96,11 +96,57 @@ h1 {
     .anim-up {
         font-size: 10rem;
     }
+
+    @keyframes show {
+        from {
+            opacity: 1;
+            scale: 100%;
+        }
+    
+        to {
+            opacity: 0;
+            scale: 0%;
+        }
+    }
+    
+    h1 {
+        view-timeline-name: --title;
+        view-timeline-axis: block;
+    
+        animation-timeline: --title;
+        animation-name: show;
+    
+        animation-range: cover 1300px;
+    }
 }
 
-@media (max-width: 719px) {
+@media (max-width: 767px) {
     .anim-up {
         font-size: 7rem;
+    }
+    header h1 {
+        height: 800px;
+    }
+    @keyframes show {
+        from {
+            opacity: 1;
+            scale: 100%;
+        }
+    
+        to {
+            opacity: 0;
+            scale: 25%;
+        }
+    }
+    
+    h1 {
+        view-timeline-name: --title;
+        view-timeline-axis: block;
+    
+        animation-timeline: --title;
+        animation-name: show;
+    
+        animation-range: entry 100% cover 100%;
     }
 }
 
@@ -404,18 +450,21 @@ footer {
         height: 400px;
     }
     .poss-content{
-        width: 400px;
-        height: 400px;
+        width: 600px;
+        height: 300px;
         font-size: 1.8rem;
     }
 }
 
-@media (max-width: 1620px ) {
+@media (max-width: 1710px ) {
     .poss {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+    .poss-content {
+        font-size: 1.9rem;
     }
 }
 
@@ -435,9 +484,8 @@ footer {
         height: 310px;
     }
     .poss-content{
-        width: 400px;
-        height: 400px;
-        font-size: 1.8rem;
+        width: 500px;
+        height: 300px;
     }
 }
 
@@ -445,6 +493,11 @@ footer {
     .poss img {
         width: 410px;
         height: 260px;
+    }
+    .poss-content{
+        width: 410px;
+        height: 240px;
+        font-size: 1.4rem;
     }
 }
 
@@ -541,7 +594,7 @@ footer {
 .sit {
     width: 100%;
     height: 1000px;
-    padding: 100px;
+    padding: 200px;
     background-image: url(../imagenes/yaguareteacostado.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -551,14 +604,14 @@ footer {
 .sit-content p {
     background-color: #4b833a; 
     width: 100%;
-    height: 350px;
-    font-size: 1.6rem;
+    height: 270px;
+    font-size: 2rem;
     font-family: 'Kanit';
     padding: 20px;
     text-align: justify;
-    margin: 20px;
     opacity: 0.9;
     border-radius: 10px;
+    overflow: hidden;
 }
 
 .act {
@@ -569,32 +622,40 @@ footer {
     position: relative;
 }
 
+.act-content {
+    display: grid;
+    align-items: center;
+}
+
 .act-content img {
     width: 700px;
     height: 1000px;
     border-radius: 10px;
     position: absolute;
+    right: 55%;
 }
 
 .act-content p {
+    display: flex;
+    align-items: center;
     font-family: 'Kanit';
-    font-size: 1.6rem;
+    font-size: 2.2rem;
     background-color: #ffac5f;
     border: 5px ridge  #f8a66f;
     width: 800px;
-    height: 1000px;
+    height: 900px;
     padding: 35px;
     text-align: justify;
     border-radius: 5px;
     position: absolute;
-    left: 52%;
+    left: 55%;
 }
 
 /*MAIN PAGINA 3*/
 
 .dis {
     width: 100%;
-    padding: 50px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -605,15 +666,53 @@ footer {
 
 .dis-content {
     font-family: 'Kanit';
-    font-size: 1.6rem;
+    font-size: 1.7rem;
     text-align: justify;
     background-color: #ffac5f;
     border: 5px ridge  #f8a66f;
     width: 800px;
     height: 420px;
-    padding: 30px;
+    padding: 20px;
     border-radius: 5px;
-    margin: 0 0 0 100px;
+}
+
+@media (max-width: 810px) {
+    .dis-content {
+        font-size: 1.4rem;
+        height: 310px;
+    }
+}
+
+@media (max-width: 750px) {
+    .dis-content {
+        font-size: 1.1rem;
+        height: 250px;
+    }
+}
+
+@media (max-width: 650px) {
+    .dis-content {
+        font-size: 0.9rem;
+        height: 170px;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 535px) {
+    .dis-content {
+        font-size: 0.7rem;
+        height: 150px;
+    }
+}
+
+@media (max-width: 419px) {
+    .dis-content {
+        font-size: 0.6rem;
+        height: 150px;
+    }
+    #carouselExample {
+        padding: 0;
+    }
 }
 
 /* carousel */
@@ -621,7 +720,7 @@ footer {
 #carouselExample {
     width: 100%;
     height: auto;
-    padding: 40px;
+    padding: 10px;
 }
   
 .carousel-inner,
@@ -710,6 +809,13 @@ footer {
     transition: all .2s;
     border: none;
     font-weight: 500;
+}
+
+@media (max-width: 439px) {
+    .card a {
+        font-size: 12px;
+        width: 250px;
+    }
 }
 
    
@@ -810,6 +916,16 @@ footer {
     .cias-content iframe {
         width: 370px;
         height: 205px;
+    }
+}
+
+@media (max-width: 439px) {
+    .cias {
+        height: 350px;
+    }
+    .cias-content iframe {
+        width: 270px;
+        height: 150px;
     }
 }
 
