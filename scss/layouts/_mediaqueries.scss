@@ -554,15 +554,21 @@
 }
 
 @media (max-width: 539px) {
-    .cards .card {
-        width: 340px;
+    .cards{
+        .card {
+            width: 340px;
+        }
     }
 }
 
 @media (max-width: 439px) {
-    .card a {
-        font-size: 12px;
-        width: 250px;
+    .cards {
+        .card {
+            a {
+                font-size: 12px;
+                width: 250px;
+            }
+        }
     }
 }
 
@@ -575,33 +581,47 @@
 }
 
 @media (max-width: 770px) {
-    .cias-content iframe {
-        width: 610px;
-        height: 340px;
+    .cias {
+        .cias-content {
+            iframe {
+                width: 610px;
+                height: 340px;
+            }
+        }
     }
 }
 
 @media (max-width: 670px) {
-    .cias-content iframe {
-        width: 500px;
-        height: 280px;
+    .cias {
+        .cias-content {
+            iframe {
+                width: 500px;
+                height: 280px;
+            }
+        }
     }
 }
 
 @media (max-width: 549px) {
-    .cias-content iframe {
-        width: 370px;
-        height: 205px;
+    .cias {
+        .cias-content {
+            iframe {
+                width: 370px;
+                height: 205px;
+            }
+        }
     }
 }
 
 @media (max-width: 439px) {
     .cias {
         height: 350px;
-    }
-    .cias-content iframe {
-        width: 270px;
-        height: 150px;
+        .cias-content {
+            iframe {
+            width: 270px;
+            height: 150px;
+            }
+        }
     }
 }
 

@@ -1105,7 +1105,7 @@ nav ul li .nav-button:hover {
   }
 }
 @media (max-width: 439px) {
-  .card a {
+  .cards .card a {
     font-size: 12px;
     width: 250px;
   }
@@ -1118,19 +1118,19 @@ nav ul li .nav-button:hover {
   }
 }
 @media (max-width: 770px) {
-  .cias-content iframe {
+  .cias .cias-content iframe {
     width: 610px;
     height: 340px;
   }
 }
 @media (max-width: 670px) {
-  .cias-content iframe {
+  .cias .cias-content iframe {
     width: 500px;
     height: 280px;
   }
 }
 @media (max-width: 549px) {
-  .cias-content iframe {
+  .cias .cias-content iframe {
     width: 370px;
     height: 205px;
   }
@@ -1139,7 +1139,7 @@ nav ul li .nav-button:hover {
   .cias {
     height: 350px;
   }
-  .cias-content iframe {
+  .cias .cias-content iframe {
     width: 270px;
     height: 150px;
   }
