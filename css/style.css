@@ -1144,5 +1144,21 @@ nav ul li .nav-button:hover {
     height: 150px;
   }
 }
+@media (max-width: 459px) {
+  .cont .form-content div input {
+    width: 250px;
+  }
+  .cont .form-content div textarea {
+    width: 250px;
+  }
+}
+@media (max-width: 399px) {
+  .cont .form-content div input {
+    width: 200px;
+  }
+  .cont .form-content div textarea {
+    width: 200px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
