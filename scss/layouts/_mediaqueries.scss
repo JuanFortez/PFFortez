@@ -492,25 +492,37 @@
 
 // MEDIAQUERIES DISTRIBUCION
 
-@media (max-width: 810px) {
-    .dis-content {
-        font-size: 1.4rem;
-        height: 310px;
+@media (max-width: 790px) {
+    .dis {
+        .dis-content {
+            height: 290px;
+            p {
+                font-size: 1.4rem;
+            }
+        }
     }
 }
 
-@media (max-width: 750px) {
-    .dis-content {
-        font-size: 1.1rem;
-        height: 250px;
+@media (max-width: 749px) {
+    .dis {
+        .dis-content {
+            width: 500px;
+            height: 320px;
+            p {
+                font-size: 1.2rem;
+            }
+        }
     }
 }
 
-@media (max-width: 650px) {
-    .dis-content {
-        font-size: 0.9rem;
-        height: 170px;
-        padding: 10px;
+@media (max-width: 539px) {
+    .dis {
+        .dis-content {
+            height: auto;
+            p {
+                padding: 10px;
+            }
+        }
     }
 }
 

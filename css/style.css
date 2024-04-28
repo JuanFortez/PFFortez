@@ -1052,22 +1052,28 @@ nav ul li .nav-button:hover {
     font-size: 1.4rem;
   }
 }
-@media (max-width: 810px) {
-  .dis-content {
+@media (max-width: 790px) {
+  .dis .dis-content {
+    height: 290px;
+  }
+  .dis .dis-content p {
     font-size: 1.4rem;
-    height: 310px;
   }
 }
-@media (max-width: 750px) {
-  .dis-content {
-    font-size: 1.1rem;
-    height: 250px;
+@media (max-width: 749px) {
+  .dis .dis-content {
+    width: 500px;
+    height: 320px;
+  }
+  .dis .dis-content p {
+    font-size: 1.2rem;
   }
 }
-@media (max-width: 650px) {
-  .dis-content {
-    font-size: 0.9rem;
-    height: 170px;
+@media (max-width: 539px) {
+  .dis .dis-content {
+    height: auto;
+  }
+  .dis .dis-content p {
     padding: 10px;
   }
 }
