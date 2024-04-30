@@ -20,7 +20,7 @@
         min-height: 500px;
         max-height: 100%;
         font-size: 2rem;
-        
+
         img {
             width: 100%;
             height: 100%;
@@ -139,16 +139,18 @@
         text-align: justify;
         background-color: beige;
         width: 500px;
-        height: 400px;
+        height: 520px;
         overflow: hidden;
         padding: 10px;
         border: 5px ridge  #f8a66f;
         top: 15px; 
         border-radius: 5px;
+        display: flex;
+        align-items: center;
 
         P {
             font-family: 'Kanit';
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
     }
 }
