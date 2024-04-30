@@ -393,7 +393,7 @@ nav ul li .nav-button:hover {
 .sit .sit-content p {
   background-color: #4b833a;
   width: 100%;
-  height: 270px;
+  height: auto;
   font-size: 2rem;
   font-family: "Kanit";
   padding: 20px;
@@ -428,7 +428,7 @@ nav ul li .nav-button:hover {
   font-size: 2.2rem;
   background-color: #ffac5f;
   border: 5px ridge #f8a66f;
-  width: 800px;
+  width: 900px;
   height: 900px;
   padding: 35px;
   text-align: justify;
@@ -941,63 +941,61 @@ nav ul li .nav-button:hover {
     height: 170px;
   }
 }
-@media (max-width: 1619px) {
+@media (max-width: 1669px) {
   .sit .sit-content {
     width: 1300px;
-    height: 300px;
+  }
+  .sit .sit-content p {
+    height: auto;
   }
 }
 @media (max-width: 1349px) {
   .sit .sit-content {
     width: 1000px;
-    height: 300px;
   }
   .sit .sit-content p {
+    height: auto;
     font-size: 1.7rem;
   }
 }
-@media (max-width: 1019px) {
+@media (max-width: 1049px) {
   .sit {
-    height: 800px;
     gap: 30px;
   }
   .sit .sit-content {
     width: 600px;
   }
   .sit .sit-content p {
-    height: 300px;
+    height: auto;
     font-size: 1.4rem;
   }
 }
 @media (max-width: 649px) {
   .sit {
-    height: 800px;
     gap: 40px;
   }
   .sit .sit-content {
     width: 400px;
-    height: 350px;
   }
   .sit .sit-content p {
-    height: 350px;
+    height: auto;
     font-size: 1.2rem;
   }
 }
 @media (max-width: 439px) {
   .sit {
-    height: 1000px;
+    height: 1300px;
     gap: 40px;
   }
   .sit .sit-content {
     width: 300px;
-    height: 450px;
   }
   .sit .sit-content p {
-    height: 460px;
+    height: auto;
     font-size: 1.2rem;
   }
 }
-@media (max-width: 1669px) {
+@media (max-width: 1769px) {
   .act .act-content {
     gap: 60px;
   }
@@ -1008,7 +1006,7 @@ nav ul li .nav-button:hover {
   .act .act-content p {
     width: 600px;
     height: 800px;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 }
 @media (max-width: 1319px) {

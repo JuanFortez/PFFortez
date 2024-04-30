@@ -351,11 +351,13 @@
 
 // MEDIAQUERIES SITUACION ACTUAL
 
-@media (max-width: 1619px) {
+@media (max-width: 1669px) {
     .sit {
         .sit-content {
             width: 1300px;
-            height: 300px;
+            p {
+                height: auto;
+            }
         }
     }
 }
@@ -364,22 +366,21 @@
     .sit {
         .sit-content {
             width: 1000px;
-            height: 300px;
             p {
+                height: auto;
                 font-size: 1.7rem;
             }
         }
     }
 }
 
-@media (max-width: 1019px) {
+@media (max-width: 1049px) {
     .sit {
-        height: 800px;
         gap: 30px;
         .sit-content {
             width: 600px;
             p {
-                height: 300px;
+                height: auto;
                 font-size: 1.4rem;
             }
         }
@@ -388,13 +389,11 @@
 
 @media (max-width: 649px) {
     .sit {
-        height: 800px;
         gap: 40px;
         .sit-content {
             width: 400px;
-            height: 350px;
             p {
-                height: 350px;
+                height: auto;
                 font-size: 1.2rem;
             }
         }
@@ -403,20 +402,19 @@
 
 @media (max-width: 439px) {
     .sit {
-        height: 1000px;
+        height: 1300px;
         gap: 40px;
         .sit-content {
             width: 300px;
-            height: 450px;
             p {
-                height: 460px;
+                height: auto;
                 font-size: 1.2rem;
             }
         }
     }
 }
 
-@media (max-width: 1669px) {
+@media (max-width: 1769px) {
     .act {
         .act-content {
             gap: 60px;
@@ -427,7 +425,7 @@
             p {
                 width: 600px;
                 height: 800px;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
             }
         }
     }
