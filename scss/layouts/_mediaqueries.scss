@@ -179,14 +179,87 @@
 
 
 @media (max-width: 1199px) {
-    .hero-item p {
-        font-size: 2rem;
+    .hero {
+        .hero-content {
+            .hero-item {
+                padding: 0;
+                p {
+                    font-size: 2rem;
+                }
+            }
+        }
     }
 }
 
-@media (max-width: 639px) {
-    .hero-item p {
-        font-size: 1.4rem;
+@media (max-width: 829px) {
+    .hero {
+        .hero-content {
+            .hero-item {
+                p {
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 719px) {
+    .hero {
+        .hero-content {
+            .hero-item {
+                p {
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 624px) {
+    .hero {
+        .hero-content {
+            .hero-item {
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 489px) {
+    .hero {
+        .hero-content {
+            .hero-item {
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 439px) {
+    .hero {
+        .hero-content {
+            .hero-item {
+                p {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 382px) {
+    .hero {
+        .hero-content {
+            .hero-item {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
     }
 }
 
