@@ -103,7 +103,7 @@ footer .row .marquee .marquee-content ul:hover li {
 
 /*HEADER*/
 .header-pant {
-  background-image: url(../imagenes/SelvaAmazonica.jpg);
+  background-image: url(../../imagenes/SelvaAmazonica.jpg);
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,8 +112,7 @@ footer .row .marquee .marquee-content ul:hover li {
   height: auto;
   align-content: center;
 }
-
-h1 {
+.header-pant h1 {
   width: 100%;
   height: 1000px;
   color: aliceblue;
