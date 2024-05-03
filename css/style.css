@@ -103,7 +103,7 @@ footer .row .marquee .marquee-content ul:hover li {
 
 /*HEADER*/
 .header-pant {
-  background-image: url(../../imagenes/SelvaAmazonica.jpg);
+  background-image: url(../../../imagenes/SelvaAmazonica.jpg);
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -148,7 +148,7 @@ h1 {
 
 /*NAVBAR*/
 nav {
-  background-color: #f8a66f;
+  background-color: #ffc691;
   position: sticky;
   top: 0;
   z-index: 4;
@@ -207,14 +207,17 @@ nav ul li .nav-button:hover {
   gap: 10px;
 }
 .hero .hero-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #f8a66f;
   width: 100%;
   min-height: 500px;
   max-height: 100%;
   font-size: 2rem;
+  display: flex;
+  flex-direction: none;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: center;
+  align-content: none;
 }
 .hero .hero-content img {
   width: 100%;
@@ -222,22 +225,23 @@ nav ul li .nav-button:hover {
   object-fit: cover;
 }
 .hero .hero-content .hero-item {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: flex-end;
+  align-items: flex-end;
+  align-content: none;
   background-color: transparent;
   transition: background-color 0.5s ease-in-out;
   color: transparent;
   position: absolute;
   height: 100%;
   padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
   gap: 10px;
 }
 .hero .hero-content .hero-item p {
-  font-family: "Galdeano";
   font-size: 2.4rem;
-  height: auto;
+  font-family: "Galdeano";
 }
 .hero .hero-content .hero-item:hover {
   content: "";
@@ -254,36 +258,42 @@ nav ul li .nav-button:hover {
 }
 .hero .b1 {
   grid-area: box1;
-  display: flex;
-  flex-direction: column;
   text-align: left;
-  align-items: flex-start;
-  justify-content: center;
   padding: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: none;
 }
 .hero .b2 {
   grid-area: box2;
 }
 .hero .b3 {
   grid-area: box3;
-  display: flex;
-  flex-direction: column;
   text-align: left;
-  align-items: flex-start;
-  justify-content: center;
   padding: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: none;
 }
 .hero .b4 {
   grid-area: box4;
-  display: flex;
-  flex-direction: column;
   text-align: left;
-  align-items: flex-start;
-  justify-content: center;
   padding: 0;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: none;
 }
 .hero .b5 {
   grid-area: box5;
@@ -299,14 +309,16 @@ nav ul li .nav-button:hover {
 }
 
 .poss {
+  background-color: #ffc691;
   width: 100%;
   padding: 50px;
+  gap: 30px;
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
-  gap: 30px;
+  align-content: none;
 }
 .poss img {
   width: 650px;
@@ -315,21 +327,21 @@ nav ul li .nav-button:hover {
   top: 15px;
 }
 .poss .poss-content {
+  display: flex;
+  align-items: center;
   text-align: justify;
-  background-color: beige;
+  background-color: #fcdab1;
   width: 500px;
   height: 520px;
   overflow: hidden;
   padding: 10px;
-  border: 5px ridge #f8a66f;
+  border: 3px ridge #f8a66f;
   top: 15px;
   border-radius: 5px;
-  display: flex;
-  align-items: center;
 }
 .poss .poss-content P {
-  font-family: "Kanit";
   font-size: 1.6rem;
+  font-family: "Kanit";
 }
 
 .vidau {
@@ -346,9 +358,10 @@ nav ul li .nav-button:hover {
   height: 100%;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-evenly;
   align-items: center;
+  align-content: none;
 }
 .vidau .vidau-content iframe {
   width: 650px;
@@ -357,18 +370,20 @@ nav ul li .nav-button:hover {
   border-radius: 10px;
 }
 .vidau .vidau-content div {
-  width: 400px;
-  height: 400px;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
   justify-content: center;
   align-items: flex-start;
+  align-content: none;
+  width: 400px;
+  height: 400px;
   gap: 20px;
 }
 .vidau .vidau-content div h2 {
+  font-size: 2.4rem;
   font-family: "Kanit";
   color: rgb(252, 172, 82);
-  font-size: 24px;
 }
 .vidau .vidau-content div audio {
   width: 400px;
@@ -387,25 +402,28 @@ nav ul li .nav-button:hover {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: none;
   align-content: center;
+  gap: 20px;
 }
 .sit .sit-content {
   width: 1600px;
 }
 .sit .sit-content p {
-  background-color: #4b833a;
+  background-color: #ffc691;
   width: 100%;
   height: auto;
-  font-size: 2rem;
-  font-family: "Kanit";
   padding: 20px;
   text-align: justify;
   opacity: 0.9;
   border-radius: 10px;
   overflow: hidden;
+  font-size: 2rem;
+  font-family: "Kanit";
 }
 
 .act {
+  background-color: #ffc691;
   width: 100%;
   height: 1200px;
   display: flex;
@@ -414,21 +432,25 @@ nav ul li .nav-button:hover {
 .act .act-content {
   display: flex;
   flex-direction: row;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
+  align-content: none;
   gap: 100px;
 }
 .act .act-content img {
   width: 700px;
   height: 1000px;
+  object-fit: cover;
   border-radius: 10px;
   right: 55%;
 }
 .act .act-content p {
   display: flex;
   align-items: center;
-  font-family: "Kanit";
   font-size: 2.2rem;
-  background-color: #ffac5f;
+  font-family: "Kanit";
+  background-color: #fcdab1;
   border: 5px ridge #f8a66f;
   width: 900px;
   height: 900px;
@@ -440,18 +462,19 @@ nav ul li .nav-button:hover {
 
 /*MAIN DISTRIBUCION*/
 .dis {
+  background-color: #f8a66f;
   width: 100%;
   padding: 20px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-content: center;
   justify-content: center;
   align-items: center;
+  align-content: center;
 }
 .dis .dis-content {
   text-align: justify;
-  background-color: #ffac5f;
+  background-color: #ffc691;
   border: 5px ridge #f8a66f;
   width: 1100px;
   height: auto;
@@ -459,12 +482,13 @@ nav ul li .nav-button:hover {
   border-radius: 5px;
 }
 .dis .dis-content p {
-  font-family: "Kanit";
   font-size: 1.7rem;
+  font-family: "Kanit";
 }
 
 /* carousel */
 #carouselExample {
+  background-color: #ffc691;
   width: 100%;
   height: auto;
   padding: 10px;
@@ -483,63 +507,69 @@ nav ul li .nav-button:hover {
 
 /*MAIN NOTICIAS*/
 .cards {
+  background-color: #f8a66f;
   display: flex;
+  flex-direction: none;
   flex-wrap: wrap;
   justify-content: space-evenly;
+  align-items: none;
+  align-content: none;
   gap: 30px;
-  padding: 20px;
-  margin: 50px;
+  padding: 50px;
 }
 .cards .card {
-  background-color: #ff9a3c;
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
   flex-direction: column;
+  flex-wrap: none;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: none;
+  background-color: #ff9a3c;
   text-align: center;
   width: 400px;
   padding: 15px;
   border-radius: 10px;
-  color: white;
-  transition: 1s;
+  transition: 0.5s;
 }
 .cards .card img {
   width: 100%;
   height: 400px;
-  padding: 10px;
   object-fit: cover;
+  padding: 10px;
 }
 .cards .card h2,
 .cards .card p {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: none;
+  justify-content: center;
+  align-items: flex-start;
+  align-content: none;
   color: rgb(63, 63, 63);
   text-align: start;
   padding: 20px;
-  display: flex;
-  flex-direction: column;
   gap: 10px;
-  justify-content: center;
-  align-items: flex-start;
 }
 .cards .card a {
+  display: inline-block;
   position: relative;
   text-decoration: none;
   text-transform: uppercase;
-  font-family: "Galdeano";
-  background-color: rgb(255, 167, 95);
+  background-color: #f8a66f;
   padding: 15px;
   color: #000;
-  font-size: 18px;
   width: 300px;
   text-align: center;
-  display: inline-block;
   border-radius: 6em;
   transition: all 0.2s;
   border: none;
   font-weight: 500;
+  font-size: 18px;
+  font-family: "Galdeano";
 }
 .cards .card a:hover {
   transform: translateY(-3px);
-  box-shadow: 0 10px 15px rgba(255, 115, 0, 0.726);
+  box-shadow: 0 10px 15px rgba(255, 115, 0, 0.7254901961);
 }
 .cards .card a:active {
   transform: translateY(-1px);
@@ -555,13 +585,13 @@ nav ul li .nav-button:hover {
   top: 0;
   left: 0;
   z-index: -1;
-  transition: all 0.4s;
+  transition: all 0.5s;
 }
 .cards .card a::after {
-  background-color: #ff8c2d;
+  background-color: rgba(255, 115, 0, 0.7254901961);
 }
 .cards .card a:hover::after {
-  transform: scaleX(1.4) scaleY(1.6);
+  transform: scaleX(1.2) scaleY(1.4);
   opacity: 0;
 }
 .cards .card h2 {
@@ -576,7 +606,7 @@ nav ul li .nav-button:hover {
   transform: scale(1.1, 1.1);
 }
 .cards:hover > .card:not(:hover) {
-  filter: blur(3px);
+  filter: blur(1px);
   transform: scale(0.9, 0.9);
 }
 
@@ -601,29 +631,31 @@ nav ul li .nav-button:hover {
 
 /*MAIN CONTACTO*/
 .cont {
+  background-color: #ffc691;
   display: flex;
-  width: 100%;
-  margin-top: 33px;
-  margin-bottom: 30px;
-  padding: 30px;
   justify-content: center;
+  width: 100%;
+  padding: 60px;
 }
 .cont .form-content {
-  width: 500px;
-  padding: 40px;
   display: flex;
   flex-direction: column;
+  flex-wrap: none;
+  justify-content: none;
   align-items: center;
-  background-color: #ffac5f;
+  align-content: none;
+  width: 500px;
+  padding: 40px;
+  background-color: #f8a66f;
   border: none;
   border-radius: 10px;
-  box-shadow: 0px 4px 70px -10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 4px 30px -5px rgba(0, 0, 0, 0.6);
   gap: 15px;
   outline: none;
 }
 .cont .form-content div label {
-  font-family: "Kanit";
   font-size: 1.6rem;
+  font-family: "Kanit";
 }
 .cont .form-content div input {
   display: flex;
@@ -632,7 +664,7 @@ nav ul li .nav-button:hover {
   padding: 10px;
   border: none;
   border-radius: 10px;
-  background-color: rgb(255, 198, 145);
+  background-color: #fcdab1;
 }
 .cont .form-content div textarea {
   display: flex;
@@ -641,7 +673,7 @@ nav ul li .nav-button:hover {
   padding: 30px;
   border-radius: 5px;
   border: none;
-  background-color: rgb(255, 198, 145);
+  background-color: #fcdab1;
 }
 .cont .form-content button {
   cursor: pointer;

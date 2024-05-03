@@ -1,65 +1,54 @@
 /*MAIN NOTICIAS*/
 
 .cards {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+    background-color: $light-color;
+    @include flex (none, wrap, space-evenly, none , none);
     gap: 30px;
-    padding: 20px;
-    margin: 50px;
+    padding: 50px;
     
     .card {
-        background-color: #ff9a3c;
-        display: flex;
-        align-items: center;
-        justify-content: space-evenly;
-        flex-direction: column;
+        @include flex (column, none, space-evenly, center, none);
+        background-color: $secondary-color;
         text-align: center;
         width: 400px;
         padding: 15px;
         border-radius: 10px;
-        color: white;
-        transition: 1s;
+        transition: 0.5s;
         
         img {
-            width: 100%;
-            height: 400px;
+            @include img (100%, 400px, cover);
             padding: 10px;
-            object-fit: cover;
         }
 
         h2,
         p {
+
+            @include flex (column, none, center, flex-start, none);
             color: rgb(63, 63, 63);
             text-align: start;
             padding: 20px;
-            display: flex;
-            flex-direction: column;
             gap: 10px;
-            justify-content: center;
-            align-items: flex-start;
         }
 
         a {
+            display: inline-block;
             position: relative;
             text-decoration: none;
             text-transform: uppercase;
-            font-family: 'Galdeano';
-            background-color: rgb(255, 167, 95);
+            background-color: $light-color;
             padding: 15px;
             color: #000;
-            font-size: 18px;
             width: 300px;
             text-align: center;
-            display: inline-block;
             border-radius: 6em;
             transition: all .2s;
             border: none;
             font-weight: 500;
+            @include font (18px, 'Galdeano');
             
             &:hover {
                 transform: translateY(-3px);
-                box-shadow: 0 10px 15px rgba(255, 115, 0, 0.726);
+                box-shadow: 0 10px 15px $dark-color;
             }
     
             &:active {
@@ -77,28 +66,26 @@
                 top: 0;
                 left: 0;
                 z-index: -1;
-                transition: all .4s;
+                transition: all .5s;
             }
     
             &::after {
-                background-color: #ff8c2d;
+                background-color: $dark-color;
             }
     
             &:hover::after {
-                transform: scaleX(1.4) scaleY(1.6);
+                transform: scaleX(1.2) scaleY(1.4);
                 opacity: 0;
             }
         }
 
 
         h2 {
-            font-size: 24px;
-            font-family: 'Galdeano';
+            @include font (24px, 'Galdeano');
         }
 
         p {
-            font-size: 16px;
-            font-family: 'Kanit';
+            @include font (16px, 'Kanit');
         }
         
         &:hover {
@@ -108,7 +95,7 @@
     }
 
     &:hover > .card:not(:hover) {
-        filter: blur(3px);
+        filter: blur(1px);
         transform: scale(0.9, 0.9);
     }
   }
