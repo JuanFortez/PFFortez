@@ -7,8 +7,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    @include flex (column, wrap, center, none, center);
     gap: 20px;
+    @include flex ($flex-direction: column, $flex-wrap: wrap, $justify-content: center, $align-content: center);
     
     .sit-content { 
         width: 1600px;
@@ -35,7 +35,7 @@
     justify-content: space-evenly;
     
     .act-content {
-        @include flex (row, none, none, center, none);
+        @include flex ($flex-direction: row, $align-items: center);
         gap: 100px;
         
         img {
@@ -47,7 +47,6 @@
         p {
             display: flex;
             align-items: center;
-            @include font (2.2rem, 'Kanit');
             background-color: $third-light-color;
             border: 5px ridge  #f8a66f;
             width: 900px;
@@ -56,6 +55,7 @@
             text-align: justify;
             border-radius: 5px;
             left: 55%;
+            @include font (2.2rem, 'Kanit');
         }
     }
 }

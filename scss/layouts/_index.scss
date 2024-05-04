@@ -46,8 +46,7 @@
                     width: 100%;
                     height: 100%;
                     padding: 10px;
-                    justify-content: flex-start;
-                    align-content: flex-end;
+                    @include flex($justify-content: flex-start, $align-content: flex-end);
                 }
             }
             
@@ -60,7 +59,7 @@
         text-align: left;
         padding: 0;
         position: relative;
-        @include flex (column, none, center, flex-start, none);
+        @include flex ($justify-content: center, $align-items: flex-start);
     }
     
     .b2 {
@@ -72,7 +71,7 @@
         text-align: left;
         padding: 0;
         position: relative;
-        @include flex (column, none, center, flex-start, none);
+        @include flex ($justify-content: center, $align-items: flex-start);
     }
     
     .b4 {
@@ -80,7 +79,7 @@
         text-align: left;
         padding: 0;
         position: relative;
-        @include flex (column, none, center, flex-start, none);
+        @include flex ($justify-content: center, $align-items: flex-start);
     }
     
     .b5 {
@@ -105,7 +104,7 @@
     width: 100%;
     padding: 50px;
     gap: 30px;
-    @include flex (row, nowrap, space-evenly, center, none);
+    @include flex ($flex-direction: row, $flex-wrap: nowrap, $justify-content: space-evenly, $align-items: center);
 
     img {
         width: 650px;
@@ -145,7 +144,7 @@
     .vidau-content {
         width: 100%;
         height: 100%;
-        @include flex (row, nowrap, space-evenly, center, none);
+        @include flex ($flex-direction: row, $flex-wrap: nowrap, $justify-content: space-evenly, $align-items: center);
         
         iframe {
             width: 650px;
@@ -155,10 +154,10 @@
         }
 
         div {
-            @include flex (column, none, center, flex-start, none);
             width: 400px;
             height: 400px;
             gap: 20px;
+            @include flex ($flex-direction: column, $justify-content: center, $align-items: flex-start);
             
             h2 {
                 @include font (2.4rem, 'Kanit');

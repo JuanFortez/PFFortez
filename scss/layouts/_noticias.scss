@@ -2,12 +2,12 @@
 
 .cards {
     background-color: $light-color;
-    @include flex (none, wrap, space-evenly, none , none);
+    @include flex ($flex-wrap: wrap, $justify-content: space-evenly);
     gap: 30px;
     padding: 50px;
     
     .card {
-        @include flex (column, none, space-evenly, center, none);
+        @include flex ($flex-direction: column, $justify-content: space-evenly, $align-items: center);
         background-color: $secondary-color;
         text-align: center;
         width: 400px;
@@ -22,8 +22,7 @@
 
         h2,
         p {
-
-            @include flex (column, none, center, flex-start, none);
+            @include flex ($flex-direction: column, $justify-content: center, $align-items: flex-start);
             color: rgb(63, 63, 63);
             text-align: start;
             padding: 20px;
