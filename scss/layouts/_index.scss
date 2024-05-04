@@ -17,14 +17,13 @@
         min-height: 500px;
         max-height: 100%;
         font-size: 2rem;
-        @include flex (none, none, center, center, none);
+        @include flex ($justify-content: center, $align-items: center);
 
         img {
             @include img (100%, 100%, cover);
         }
 
         .hero-item {
-            @include flex (column, none, flex-end, flex-end, none);
             background-color: transparent;
             transition: background-color 0.5s ease-in-out;
             color: transparent;

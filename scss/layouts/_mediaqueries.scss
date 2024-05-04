@@ -1,15 +1,20 @@
 // @MEDIA QUERIS
 
 @media (max-width: 1439px) {
-    .anim-up {
-        font-size: 15rem;
+    header {   
+        .anim-up {
+            font-size: 15rem;
+        }
     }
 }
 
 @media (max-width: 1099px) {
-    .anim-up {
-        font-size: 10rem;
+    header {   
+        .anim-up {
+            font-size: 10rem;
+        }
     }
+    
 
     @keyframes show {
         from {
@@ -35,12 +40,16 @@
 }
 
 @media (max-width: 767px) {
-    .anim-up {
-        font-size: 7rem;
+    header {   
+        .anim-up {
+            font-size: 7rem;
+        }
     }
-    header h1 {
-        height: 800px;
+    header {
+        h1 {
+            height: 800px;
     }
+}
     @keyframes show {
         from {
             opacity: 1;
@@ -66,12 +75,17 @@
 
 
 @media (max-width: 499px) {
-    .anim-up {
-        font-size: 5.5rem;
+    header {   
+        .anim-up {
+            font-size: 5.5rem;
+        }
     }
-    header h1 {
-        height: 800px;
-    }
+
+    header{
+        h1 {
+            height: 800px;
+        }
+    } 
     @keyframes show {
         from {
             opacity: 1;
@@ -96,12 +110,18 @@
 }
 
 @media (max-width: 399px) {
-    .anim-up {
-        font-size: 4.5rem;
+    header {   
+        .anim-up {
+            font-size: 4.5rem;
+        }
     }
-    header h1 {
-        height: 800px;
-    }
+
+    header{
+        h1 {
+            height: 800px;
+        }
+    } 
+    
     @keyframes show {
         from {
             opacity: 1;
