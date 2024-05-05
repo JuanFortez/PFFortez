@@ -528,7 +528,7 @@
 
 @media (max-width: 1319px) {
     .act {
-        margin: 20px 0 20px 0;
+        padding: 25px;
         height: 100%;
         .act-content {
             display: flex;
@@ -547,7 +547,7 @@
         .act-content {
             p {
                 width: 600px;
-                height: 100%;
+                height: auto;
             }
         }
     }
@@ -562,7 +562,7 @@
             }
             p {
                 width: 400px;
-                padding: 0 25px 0 25px;
+                padding: 25px;
             }
         }
     }
@@ -578,6 +578,21 @@
             p {
                 width: 300px;
                 font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 349px) {
+    .act {
+        .act-content {
+            img {
+                width: 250px;
+                height: 400px;
+            }
+            p {
+                width: 250px;
+                font-size: 1.2rem;
             }
         }
     }
