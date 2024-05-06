@@ -103,7 +103,7 @@ footer .row .marquee .marquee-content ul:hover li {
 
 /*HEADER*/
 .header-pant {
-  background-image: url("../../../imagenes/SelvaAmazonica.jpg");
+  background-image: url("../imagenes/SelvaAmazonica.jpg");
   background-attachment: scroll;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,7 +112,7 @@ footer .row .marquee .marquee-content ul:hover li {
   height: auto;
   align-content: center;
 }
-.header-pant .anim-up {
+.header-pant h1 {
   width: 100%;
   height: 1000px;
   color: aliceblue;
@@ -143,22 +143,22 @@ h1 {
 }
 
 /*NAVBAR*/
-nav {
+header nav {
   background-color: #ffc691;
   position: sticky;
   top: 0;
   z-index: 4;
   width: 100%;
 }
-nav ul {
+header nav ul {
   list-style-type: none;
   text-align: center;
 }
-nav ul li {
+header nav ul li {
   display: inline-flex;
   padding: 5px;
 }
-nav ul li .nav-button {
+header nav ul li .nav-button {
   position: relative;
   padding: 15px 10px 15px 10px;
   border-radius: 10px;
@@ -167,14 +167,14 @@ nav ul li .nav-button {
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
   overflow: hidden;
 }
-nav ul li .nav-button a {
+header nav ul li .nav-button a {
   text-decoration: none;
   color: black;
   font-family: "Truculenta";
   font-size: 2.2rem;
   padding: 5px;
 }
-nav ul li .nav-button::before {
+header nav ul li .nav-button::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -186,10 +186,10 @@ nav ul li .nav-button::before {
   z-index: -1;
   transition: all 1s cubic-bezier(0.23, 1, 0.32, 1);
 }
-nav ul li .nav-button:hover::before {
+header nav ul li .nav-button:hover::before {
   scale: 3;
 }
-nav ul li .nav-button:hover {
+header nav ul li .nav-button:hover {
   scale: 1.1;
 }
 
