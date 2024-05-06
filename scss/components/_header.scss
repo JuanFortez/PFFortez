@@ -1,7 +1,7 @@
 /*HEADER*/
 
-header {
-    background-image: url("../imagenes/SelvaAmazonica.jpg");
+.header-pant {
+    background-image: url("../../imagenes/selvaamazonica.jpg");
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,11 +42,4 @@ h1 {
     animation-name: show;
 
     animation-range: entry 100% cover 75%;
-}
-
-
-
-
-.bg-naranja {
-	background-color: #f8a66f;
 }
