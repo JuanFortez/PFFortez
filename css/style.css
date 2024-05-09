@@ -977,7 +977,7 @@ header nav ul li .nav-button:hover {
   }
 }
 @media (max-width: 889px) {
-  .vidau .vidau-content iframe {
+  .vidau .vidau-content .iframe-content video {
     width: 550px;
     height: 310px;
     border: none;
@@ -985,19 +985,19 @@ header nav ul li .nav-button:hover {
   }
 }
 @media (max-width: 599px) {
-  .vidau .vidau-content iframe {
+  .vidau .vidau-content .iframe-content video {
     width: 470px;
     height: 265px;
   }
 }
 @media (max-width: 518px) {
-  .vidau .vidau-content iframe {
+  .vidau .vidau-content .iframe-content video {
     width: 360px;
     height: 202px;
   }
 }
 @media (max-width: 439px) {
-  .vidau .vidau-content div {
+  .vidau .vidau-content .iframe-content video {
     width: 300px;
   }
   .vidau .vidau-content div audio {
@@ -1008,8 +1008,8 @@ header nav ul li .nav-button:hover {
   }
 }
 @media (max-width: 399px) {
-  .vidau .vidau-content iframe {
-    width: 300px;
+  .vidau .vidau-content .iframe-content video {
+    width: 270px;
     height: 170px;
   }
 }
