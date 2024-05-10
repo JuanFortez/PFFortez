@@ -135,7 +135,7 @@ footer .row .marquee .marquee-content ul:hover li {
   }
   to {
     opacity: 0;
-    scale: 25%;
+    scale: 30%;
   }
 }
 h1 {
@@ -143,7 +143,7 @@ h1 {
   view-timeline-axis: block;
   animation-timeline: --title;
   animation-name: show;
-  animation-range: entry 100% cover 75%;
+  animation-range: entry 100% cover 100%;
 }
 
 /*NAVBAR*/

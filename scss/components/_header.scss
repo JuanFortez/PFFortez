@@ -30,7 +30,7 @@
 
     to {
         opacity: 0;
-        scale: 25%;
+        scale: 30%;
     }
 }
  
@@ -41,5 +41,5 @@ h1 {
     animation-timeline: --title;
     animation-name: show;
 
-    animation-range: entry 100% cover 75%;
+    animation-range: entry 100% cover 100%;
 }
