@@ -889,6 +889,25 @@ header nav ul li .nav-button:hover {
     font-size: 1.8rem;
   }
 }
+@media (max-width: 768px) {
+  .hero .hero-content .hero-item {
+    background-color: rgba(0, 0, 0, 0.521);
+  }
+  .hero .hero-content .hero-item p {
+    color: white;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    font-size: 1.6rem;
+    font-family: "Galdeano";
+    display: flex;
+    flex-direction: center;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    align-content: flex-end;
+  }
+}
 @media (max-width: 719px) {
   .hero .hero-content .hero-item p {
     font-size: 1.7rem;
