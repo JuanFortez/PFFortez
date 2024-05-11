@@ -627,17 +627,31 @@ header nav ul li .nav-button:hover {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: local;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
 }
-.cias .cias-content iframe {
+.cias .cias-content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+}
+.cias .cias-content video {
   width: 700px;
   height: 450px;
   border: none;
-  border-radius: 10px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+.cias .cias-content a {
+  text-decoration: none;
+  color: white;
+  font-size: 15px;
 }
 
 /*MAIN CONTACTO*/

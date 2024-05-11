@@ -105,18 +105,20 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: local;
-    position: relative;
+    @include flex ($flex-direction: column, $flex-wrap: nowrap, $justify-content: center, $align-items: center);
     
     .cias-content {
-        iframe {
+        @include flex ($flex-direction: column, $align-items: center);
+        gap: 20px;
+        video {
             width: 700px;
             height: 450px;
             border: none;
-            border-radius: 10px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        }
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 15px;
         }
     }
 }
